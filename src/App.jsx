@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import Collage from './components/Collage';
+
 const initialBoard = Array(9).fill(null);
 
 const calculateWinner = (squares) => {
@@ -65,9 +67,10 @@ const Board = () => {
 };
 
 const App = () => (
-  <div className="App p-8">
+  <div className="App bg-gray-500 bg-gradient-to-tl p-8">
     <h1 className="text-6xl text-orange-800 text-center font-bold mb-4">Tic-Tac-Toe Game</h1>
-    <Board className=" align-middle" />
+    <Board className="flex items-center justify-center" />
+    <Collage />
   </div>
 );
 
