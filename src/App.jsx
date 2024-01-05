@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Collage from './components/Collage';
+import Mosaic from './components/Mosaic';
 
 const initialBoard = Array(9).fill(null);
 
@@ -70,7 +71,7 @@ const App = () => (
   <div className="App bg-gray-500 bg-gradient-to-tl p-8">
     <h1 className="text-6xl text-orange-800 text-center font-bold mb-4">Tic-Tac-Toe Game</h1>
     <Board className="flex items-center justify-center" />
-    <Collage />
+    <Mosaic />
   </div>
 );
 
